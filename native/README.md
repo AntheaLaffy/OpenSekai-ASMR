@@ -29,8 +29,8 @@ make opensekai-assets
 make opensekai-window-check
 make opensekai-live-check
 make opensekai-song-check
-./build/editor --project application/OpenSekai_Community_ASMR --app-only --headless --size 1920 1080 --output build/opensekai-manager.png
-./build/editor --project application/OpenSekai_Community_ASMR --data-dir /path/to/charts --app-screen maker
+./build/editor --project application/OpenSekai-ASMR --app-only --headless --size 1920 1080 --output build/opensekai-manager.png
+./build/editor --project application/OpenSekai-ASMR --data-dir /path/to/charts --app-screen maker
 ```
 
 `--data-dir DIR` 指定独立谱面根目录，直接包含各曲目的文件夹。默认合并项目 `content/library` 与 `$XDG_DATA_HOME/opensekai-rs/CustomMusicScores`（或 `~/.local/share/opensekai-rs/CustomMusicScores`）。验证使用临时目录，不写入用户原有谱面。
@@ -40,7 +40,7 @@ make opensekai-song-check
 原 `pjsk官谱合集` 已归档至 `content/official/source`，旧路径保留相对符号链接；8,366 个原文件的哈希记录在 `source-files.json`。3,507 个 SUS 难度文件转换为 `content/library/<歌曲ID>-<难度>/score.json` 与 `manifest.json`。`官谱id信息对照表.xlsx` 保持原样并复制归档，按 musicId 补入曲名、等级、作者、前置空白秒与官方判定数；教程不猜填。原 Unity 的 6,560 个参考文件不参与整理。
 
 ```sh
-# 下列命令在 OpenSekai_Community_ASMR 目录执行；已有包保留用户编辑
+# 下列命令在 OpenSekai-ASMR 目录执行；已有包保留用户编辑
 python3 tools/organize_official.py
 python3 tools/official_metadata.py
 target/release/opensekai audit-library content/library
@@ -50,8 +50,8 @@ python3 tools/capture_sus.py
 管理页搜索支持曲名、ID、难度、作者和等级，空格分隔的条件同时匹配；`Ctrl+F` 聚焦。点击「无音乐练习」或「自动」，也可从编辑器根目录直接定位：
 
 ```sh
-./build/editor --project application/OpenSekai_Community_ASMR --app-chart official-0001_01-easy --app-screen play
-./build/editor --project application/OpenSekai_Community_ASMR --app-chart official-0001_01-expert --app-screen auto --app-only
+./build/editor --project application/OpenSekai-ASMR --app-chart official-0001_01-easy --app-screen play
+./build/editor --project application/OpenSekai-ASMR --app-chart official-0001_01-expert --app-screen auto --app-only
 ```
 
 键位按实际键盘位置分成三排，每排 12 列。中排普通键为 `A S D F G H J K L ; ' Enter`；上排划动键为 `Q W E R T Y U I O P [ ]`；下排划动键为 `LShift Z X C V B N M , . / RShift`。不使用 Ctrl。按下中排键点击，按住长条，松手判定普通长条尾。键盘划动要求先按下、松开中排键，再按同列任一划动键；普通动作须在 180 毫秒内完成，长条尾端允许此前持续按住，但松开至划动键仍须在 180 毫秒内。上下排同列等效，单独按它们不能打普通音符或承接长条。按键重复、错误列、超时及暂停前留下的动作不能完成划动。
@@ -79,9 +79,9 @@ Life 为 0 仍继续接受输入、计分和播放音乐。谱面结束与结果
 从编辑器根目录生成实际窗口与录屏的并排图：
 
 ```sh
-make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-reference-endings --cover application/OpenSekai_Community_ASMR/content/library/0114_01-master/jacket.png'
-make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-result-motion --motion --cover application/OpenSekai_Community_ASMR/content/library/0114_01-master/jacket.png'
-make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-result-rig --motion --character --cover application/OpenSekai_Community_ASMR/content/library/0114_01-master/jacket.png'
+make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-reference-endings --cover application/OpenSekai-ASMR/content/library/0114_01-master/jacket.png'
+make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-result-motion --motion --cover application/OpenSekai-ASMR/content/library/0114_01-master/jacket.png'
+make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-result-rig --motion --character --cover application/OpenSekai-ASMR/content/library/0114_01-master/jacket.png'
 python3 tools/compare_opensekai_reference.py
 make opensekai-gameplay-check OPENSEKAI_GAMEPLAY_ARGS='--prefix opensekai-gameplay-reference'
 make opensekai-gameplay-check OPENSEKAI_GAMEPLAY_ARGS='--prefix opensekai-gameplay-feedback --feedback-details'
@@ -121,11 +121,11 @@ make opensekai-scoring-check OPENSEKAI_SCORING_ARGS='--prefix opensekai-dynamic-
 谱面编辑器直接执行原 prefab 的 RectTransform、网格/线性布局、裁剪、Sprite 图集和九宫格数据。可放置独立音符、长条和引导线首尾、选择、拖动、删除、撤销/重做、保存；主轨道按原版分段绘制长条和缓入/缓出曲线。删除任一长条端点会删除整条，删除内部连接点则重连相邻点。右侧小地图可定位，时间范围按原版 BPM 与曲目时长计算。`--app-screen maker` 打开当前选中谱面；没有有效谱面时报告原因。重复宿主导航保留当前编辑会话。
 
 ```sh
-cargo run --manifest-path application/OpenSekai_Community_ASMR/Cargo.toml -- inspect /path/to/score.json
-python3 application/OpenSekai_Community_ASMR/tools/capture_baseline.py
-python3 application/OpenSekai_Community_ASMR/tools/import_unity_assets.py
-python3 application/OpenSekai_Community_ASMR/tools/capture_minimap.py
-python3 application/OpenSekai_Community_ASMR/tools/capture_long_notes.py
+cargo run --manifest-path application/OpenSekai-ASMR/Cargo.toml -- inspect /path/to/score.json
+python3 application/OpenSekai-ASMR/tools/capture_baseline.py
+python3 application/OpenSekai-ASMR/tools/import_unity_assets.py
+python3 application/OpenSekai-ASMR/tools/capture_minimap.py
+python3 application/OpenSekai-ASMR/tools/capture_long_notes.py
 ```
 
 重新采集基准必须显式传 `--capture`，且需要 .NET 10 SDK 执行原 C#。`capture_baseline.py --capture-oracle` 只更新行为数据，先检查原文件哈希；`capture_minimap.py` 默认重新执行原 C# 并比较，只有 `--capture` 才写入结果。普通文件检查不覆盖基准。资源导入器需要 PyYAML；输出保留 GUID、fileID、层级、组件字段和素材路径，报告缺失外部引用。导入了数据不意味着已实现对应组件。

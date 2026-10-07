@@ -18,7 +18,7 @@ cargo test --locked --test rig2d --test result_ui
 真实窗口验证在 ASM 编辑器根目录运行：
 
 ```sh
-make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-result-rig --kind full_combo --motion --character --cover application/OpenSekai_Community_ASMR/content/library/0114_01-master/jacket.png'
+make opensekai-result-check OPENSEKAI_RESULT_ARGS='--prefix opensekai-result-rig --kind full_combo --motion --character --cover application/OpenSekai-ASMR/content/library/0114_01-master/jacket.png'
 ```
 
 `--character` 在成绩显示完成后继续运行，采集睁眼、闭眼、开口与摆动姿态；`result-character.png` 是实际 Vulkan 窗口的切片。独立测试验证关节连接、动作循环接缝、表情变化和最终成绩不变。生成部件的立体感、侧脸和服装形变仍与原 3D 模型有差异，不能由这些检查推出逐像素一致。

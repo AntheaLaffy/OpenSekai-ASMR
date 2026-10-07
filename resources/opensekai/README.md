@@ -36,7 +36,7 @@ SHA-256 为 `6de072a6be4d2b400da045d2d76e906a68da792fed70734da44797450e39478e`�
 
 ## 校验与重复导入
 
-在 `OpenSekai_Community_ASMR` 根目录执行：
+在 `OpenSekai-ASMR` 根目录执行：
 
 ```sh
 python3 tools/import_opensekai_resources.py verify
@@ -71,7 +71,7 @@ python3 tools/import_opensekai_resources.py attach-song
 从 ASM 编辑器根目录打开当前官谱：
 
 ```sh
-./build/editor --project application/OpenSekai_Community_ASMR --app-chart official-0001_01-easy --app-screen play
+./build/editor --project application/OpenSekai-ASMR --app-chart official-0001_01-easy --app-screen play
 ```
 
 Rust 已接入这些 cue 的判定、空击、摩擦/划动、连接点、长条循环和手动结算音，ASM 宿主独立混音，不改变音乐时钟。音效选择有 112 组原 C# 执行对照；C ABI 检查同拍合音、轮换、暂停/恢复和重新演奏，实际窗口检查采集判定及循环音输出。角色语音、完整倒计时/技能演出及其他音效皮肤仍待迁移；素材收录和当前音效接通不等同于已完成所有演出效果。
