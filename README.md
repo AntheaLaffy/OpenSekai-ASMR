@@ -1,14 +1,52 @@
-### Ojsk Community
+# OpenSekai-ASMR
 
-本地 ASM 编辑器的 Rust 迁移入口见 [native/README.md](native/README.md)。原 Unity 源码与资源保留为对照基准，迁移尚在进行。
+OpenSekai-ASMR 是 ASM Unity 编辑器与原生 Rust 运行时的迁移项目。Unity 源码、资源和项目设置保留为行为与视觉参照；Rust 运行时负责逐步接管谱面管理、编辑、演奏和结算流程。迁移的基准、运行方式和验收范围见 [native/README.md](native/README.md)。
 
- <img src="https://www.jsoftstudio.top/css/Jsoft_logo.png" width = "100" height = "100" alt="Jsoft_logo" align=center />
+> [!WARNING]
+> Rust 运行时仍在迁移中，尚未覆盖全部应用入口，也没有证明与 Unity 画面逐像素一致。完整的已接通功能和未完成项目以 [native/README.md](native/README.md) 为准。
+
+## 当前内容
+
+- Unity 工程仍提供原有的谱面编辑、第三方歌曲包和 Live 测试流程。
+- Rust 运行时已经接入谱面读取与校验、SUS 导入、曲库扫描、手动／自动演奏、判定计分、音乐与演奏音效、结算界面，以及原生谱面编辑器的主要流程。
+- `resources/opensekai` 保存固定版本的 OpenSekai 美术、音频和 Unity 资源快照；`resources/audio` 与 `resources/references` 保存独立的音频处理结果和视觉验收资料。
+
+## 快速开始
+
+Unity 工程使用 Unity `2022.3.62f3`，渲染管线为 URP 14。用 Unity Hub 打开本目录即可继续使用原编辑器；原 Unity 应用的显示名称仍保留为 `Ojsk Community`。
+
+构建并运行 Rust 命令行工具：
+
+```sh
+cargo build --release
+cargo run --release -- inspect /path/to/score.json
+cargo run --release -- audit-library /path/to/library
+```
+
+原生窗口、ASM 宿主、资源导入和回归检查命令集中记录在 [native/README.md](native/README.md)。
+
+## 目录
+
+- `Assets/`、`Packages/`、`ProjectSettings/`：原 Unity 工程和迁移参照资源。
+- `native/`：Rust 运行时、C ABI、基准数据和迁移检查工具。
+- `resources/opensekai/`：固定提交的 OpenSekai 资源快照、清单和音效绑定表。
+- `resources/audio/`：用户音频的无损处理结果及校验信息。
+- `resources/references/`：用于视觉对照的用户录屏、封面和切片。
+- `resources/generated/`：迁移过程中生成并单独记录来源的视觉资源。
+- `tools/`：资源导入、转换和验证脚本。
+- `content/`：本地谱面包和官谱整理目录，属于本机数据，不作为源代码发布内容。
+
+## 许可与资源
+
+本仓库中的代码以 MIT 协议发布。第三方库、字体、音频、贴图、Prefab、Shader，以及来自原作或其他权利方的资源不自动包含在 MIT 授权范围内；请遵循各自的原始许可和权利归属。资源来源和固定版本见 [resources/opensekai/README.md](resources/opensekai/README.md)。
+
+本项目与 Project Sekai、其发行方或其他权利方没有官方关联。
+
+<img src="https://www.jsoftstudio.top/css/Jsoft_logo.png" width="100" height="100" alt="Jsoft_logo" align="center" />
 
 ###### ©2024-2026 Jsoft Studio
 
-------
-
-<img src="https://img.shields.io/github/stars/kamcdev/OpenSekai_Community.svg">
+<img src="https://img.shields.io/github/stars/AntheaLaffy/OpenSekai-ASMR.svg">
 
 <img src="https://img.shields.io/badge/交流QQ群-984242265-purple">
 
@@ -17,34 +55,3 @@
 <img src="https://img.shields.io/badge/B站-J软件官方-light">
 
 <img src="https://img.shields.io/badge/官网-www.jsoftstudio.top-yellow">
-
-------
-
-
-> [!CAUTION]
-> 此仓库已进行归档并被放弃维护，未来大概率不会继续更新
-
-> [!tip]
-> 欢迎clone本仓库，基于功能丰富的社区版继续开发
-
-Ojsk Community 是一个用于学习和研究目的的 Project Sekai 音乐游戏玩法复刻项目，目前提供可用的**谱面编辑器**、**第三方歌曲包支持**，以及**从编辑器进入 live 测试游玩**的完整流程。
-
-## 开发环境
-
-- Unity: 2022.3.62f3
-- 渲染管线: URP 14
-- 主要依赖: TextMesh Pro、UniTask、MessagePack、uPalette、UI Particle、SoftMaskForUGUI
-
-## 目录说明
-
-- `Assets/Scripts/Assembly-CSharp/Sekai`：主要游戏逻辑。
-- `Assets/Resources`：运行时通过 `Resources` 加载的 Prefab、文本、字体、特效和界面数据。
-- `Assets/Sekai/assetbundle/resources`：原样放置的 AssetBundle 源资源，资源本身应保留 AssetBundle 名称，之后通过构建流程打包。
-- `Assets/StreamingAssets`：打包后的 AssetBundle 与本地运行数据输出位置，主要用于构建后的运行环境。
-- `Assets/Editor/OjskCommunityAssetBundleBuildPipeline.cs`：本地 AssetBundle 构建流程。
-
-## 资源说明
-
-本仓库中的代码以 MIT 协议发布。第三方库、字体、音频、贴图、prefab、shader 参考资源以及任何可能来源于原作或其他权利方的资源，不自动包含在 MIT 授权范围内，请分别遵循其原始许可和权利归属。
-
-本项目与任何原作游戏、发行方或权利方没有官方关联。
