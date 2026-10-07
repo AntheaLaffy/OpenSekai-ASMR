@@ -27,6 +27,33 @@ cargo run --release -- audit-library /path/to/library
 
 原生窗口、ASM 宿主、资源导入和回归检查命令集中记录在 [native/README.md](native/README.md)。
 
+## 与 `unity_ui` 的关系
+
+本仓库是 [AntheaLaffy/unity_ui](https://github.com/AntheaLaffy/unity_ui) 的 OpenSekai 应用项目。`unity_ui` 提供 ASMUI 编辑器、SDL/Vulkan 宿主和顶层 `Makefile`；本仓库提供 Unity 工程、Rust 运行时、OpenSekai 资源和谱面数据。两者必须并列放置，父仓库的 `application/OpenSekai-ASMR` 是指向本仓库的符号链接。
+
+目录应类似这样：
+
+```text
+asm/
+├── unity_ui/
+│   ├── application/OpenSekai-ASMR -> ../../OpenSekai-ASMR
+│   └── Makefile
+└── OpenSekai-ASMR/
+```
+
+从全新目录开始时，先克隆两个并列仓库：
+
+```sh
+mkdir asm
+cd asm
+git clone https://github.com/AntheaLaffy/unity_ui.git
+git clone https://github.com/AntheaLaffy/OpenSekai-ASMR.git
+cd unity_ui
+make opensekai-editor
+```
+
+`cargo` 命令可以在本仓库根目录执行；`make opensekai-*`、真实窗口检查和 ASM 宿主命令必须在 `unity_ui` 根目录执行。不要把本仓库再克隆成 `unity_ui/application/OpenSekai-ASMR` 下的实体目录，否则会破坏父仓库预期的符号链接布局。
+
 ## 目录
 
 - `Assets/`、`Packages/`、`ProjectSettings/`：原 Unity 工程和迁移参照资源。
