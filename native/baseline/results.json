@@ -1,0 +1,872 @@
+{
+  "source": "Assets/Scripts/Assembly-CSharp/Sekai/Core/Live/SoloLiveController.cs",
+  "sha256": "00ac19173d5f8ac07e6c96fb64694efe78c428d15653e84c8b0aa61cabdb2b2f",
+  "cases": [
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": false,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "None"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 0,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "None"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 1,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 2,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 3,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 4,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 0,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 0,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "LifeZero"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 0,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 3,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "AllPerfect"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 2,
+      "maxCombo": 3,
+      "autoCount": 0,
+      "expected": "FullCombo"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 1,
+      "autoCount": 0,
+      "expected": "Clear"
+    },
+    {
+      "auto": true,
+      "mode": 5,
+      "life": 1000,
+      "perfect": 0,
+      "maxCombo": 3,
+      "autoCount": 3,
+      "expected": "Clear"
+    }
+  ],
+  "fade_ease": "OutQuad",
+  "scope": "Original completed-song selection with score/settings stubs; shipped DOTween enum value 6. No Unity raster or particle execution."
+}

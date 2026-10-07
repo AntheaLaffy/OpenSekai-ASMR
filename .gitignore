@@ -119,3 +119,13 @@ InitTestScene*.unity*
 
 # API keys for cloud community features to be added to jsfttool later
 jsofttool.json
+
+# Native Rust application; original Unity assets remain the visual reference.
+/target/
+/native/.runtime/
+/native/generated/
+/tools/__pycache__/
+# Local user-provided charts and media are not source-code release artifacts.
+/content/
+/pjsk官谱合集
+/官谱id信息对照表.xlsx

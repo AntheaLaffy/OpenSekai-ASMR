@@ -1,5 +1,7 @@
 ### Ojsk Community
 
+本地 ASM 编辑器的 Rust 迁移入口见 [native/README.md](native/README.md)。原 Unity 源码与资源保留为对照基准，迁移尚在进行。
+
  <img src="https://www.jsoftstudio.top/css/Jsoft_logo.png" width = "100" height = "100" alt="Jsoft_logo" align=center />
 
 ###### ©2024-2026 Jsoft Studio

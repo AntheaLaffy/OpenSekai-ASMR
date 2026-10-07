@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "source_sha256": "c3cc8700af29a83f1efc04d36878a67e0034859c9c0ad8d59f112aba60af6f55",
+  "output": "resources/audio/0114_01/music-game.wav",
+  "output_sha256": "0bb0ea6e86de0ac4fcec0a3e922de3e4595d80ccb82f1cec14deb9ce6430df23",
+  "source_frames": 8878759,
+  "game_frames": 5382910,
+  "game_seconds": 112.14395833333333,
+  "removed_frames": 3495849,
+  "filler_seconds": 1.7628333333333333,
+  "samples_equal_to_source_regions": true,
+  "selection_preview_excluded": true,
+  "recording_windows": [
+    {
+      "recording_seconds": 25,
+      "game_audio_seconds": 4.029391778523475,
+      "waveform_correlation": 0.8404231640657123,
+      "spectral_envelope_correlation": 0.6160499361401873,
+      "negative_controls": [
+        0.38699089995057073,
+        0.42574592194900424
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 40,
+      "game_audio_seconds": 19.028612416107368,
+      "waveform_correlation": 0.5444232342181773,
+      "spectral_envelope_correlation": 0.661302010384467,
+      "negative_controls": [
+        0.03776012030756085,
+        0.04845030516773586
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 60,
+      "game_audio_seconds": 39.02757326621922,
+      "waveform_correlation": 0.44227112512245864,
+      "spectral_envelope_correlation": 0.6998018170235449,
+      "negative_controls": [
+        0.006650198718586693,
+        0.0394816927744499
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 80,
+      "game_audio_seconds": 59.02653411633108,
+      "waveform_correlation": 0.4633029541952347,
+      "spectral_envelope_correlation": 0.6442456577197458,
+      "negative_controls": [
+        0.031655684843848265,
+        0.0517271373281366
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 100,
+      "game_audio_seconds": 79.02549496644293,
+      "waveform_correlation": 0.3844712782066916,
+      "spectral_envelope_correlation": 0.6208381610438941,
+      "negative_controls": [
+        0.07611843908035429,
+        0.08784163436424601
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 110,
+      "game_audio_seconds": 89.02497539149887,
+      "waveform_correlation": 0.372852885040369,
+      "spectral_envelope_correlation": 0.6621348259233428,
+      "negative_controls": [
+        0.07528418556562103,
+        0.10792957537363472
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 120,
+      "game_audio_seconds": 99.02445581655479,
+      "waveform_correlation": 0.3437822340518624,
+      "spectral_envelope_correlation": 0.5943682312477272,
+      "negative_controls": [
+        0.037063627636291126,
+        0.03560457248178789,
+        0.10037642021134525
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 125,
+      "game_audio_seconds": 104.02419602908276,
+      "waveform_correlation": 0.39094846571823416,
+      "spectral_envelope_correlation": 0.6228115967861965,
+      "negative_controls": [
+        0.031023943420683542,
+        0.047010900020895134,
+        0.10397222563582653
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    },
+    {
+      "recording_seconds": 128,
+      "game_audio_seconds": 107.02404015659954,
+      "waveform_correlation": 0.40489223620244735,
+      "spectral_envelope_correlation": 0.5793794534349556,
+      "negative_controls": [
+        0.04484048518903376,
+        0.019452378127293692,
+        0.04043608867783882
+      ],
+      "local_offset_seconds": 2.0816681711721685e-17
+    }
+  ],
+  "packages": [
+    "0114_01-easy",
+    "0114_01-expert",
+    "0114_01-hard",
+    "0114_01-master",
+    "0114_01-normal"
+  ],
+  "scope": "Waveform edit and chart-origin alignment. Video timing estimates have approximately 40 ms uncertainty; recorded judgement sounds are excluded."
+}

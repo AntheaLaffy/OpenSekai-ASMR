@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "music_id": 114,
+  "source": "resources/references/0114_01/music-full.mp3",
+  "source_sha256": "c3cc8700af29a83f1efc04d36878a67e0034859c9c0ad8d59f112aba60af6f55",
+  "recording": "resources/references/0114_01/recording.mkv",
+  "recording_sha256": "6fae3942cec51a0851e3d0eecfac20ac34159452de884e27f8ecaea36a40f603",
+  "output": "resources/audio/0114_01/music-game.wav",
+  "sample_rate": 48000,
+  "channels": 2,
+  "encoding": "pcm_f32le",
+  "remove_frames": [4649019, 8144868],
+  "first_note_frame": 84616,
+  "filler_seconds": 1.7628333333333333,
+  "calibration": {
+    "method": "Waveform correlation of the supplied MP3 and recording; first judgement located in the 60 FPS video.",
+    "recording_to_source_slope": 0.9999480425055929,
+    "recording_to_source_offset_seconds": -20.969309284116346,
+    "recording_splice_seconds": 117.83,
+    "visual_first_judgement_seconds": 22.733333333333334,
+    "estimated_timing_uncertainty_seconds": 0.04,
+    "removed_beats_at_159_bpm": 193,
+    "crossfade_seconds": 0
+  }
+}

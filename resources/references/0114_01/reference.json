@@ -1,0 +1,275 @@
+{
+  "schema": 1,
+  "music_id": 114,
+  "title_zh": "里表情人",
+  "title": "裏表ラバーズ",
+  "provided_by": "user",
+  "observed_chart": {
+    "difficulty": "MASTER",
+    "combo": 1151,
+    "ending": "FULL COMBO"
+  },
+  "comparison": "Compare equivalent visible states; retain Rust data structures and gameplay logic.",
+  "sources": [
+    {
+      "path": "recording.mkv",
+      "original_filename": "id:114,title:里表情人,真实参考.mkv",
+      "bytes": 59106372,
+      "sha256": "6fae3942cec51a0851e3d0eecfac20ac34159452de884e27f8ecaea36a40f603",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "60/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "opus",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "156.141000",
+          "size": "59106372"
+        }
+      }
+    },
+    {
+      "path": "music-full.mp3",
+      "original_filename": "wowaka 初音ミク - 裏表ラバーズ.mp3",
+      "bytes": 7542941,
+      "sha256": "c3cc8700af29a83f1efc04d36878a67e0034859c9c0ad8d59f112aba60af6f55",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "44100",
+            "channels": 2,
+            "avg_frame_rate": "0/0"
+          },
+          {
+            "index": 1,
+            "codec_name": "mjpeg",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1080,
+            "avg_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "184.974127",
+          "size": "7542941"
+        }
+      }
+    },
+    {
+      "path": "jacket.jpg",
+      "original_filename": "里表情人.jpg",
+      "bytes": 48915,
+      "sha256": "b2e50bef2d29ee0dcbefc3d7d2fd92b09ef417ee6d1b2090b0136761ee12cd86",
+      "media": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "mjpeg",
+            "codec_type": "video",
+            "width": 1024,
+            "height": 768,
+            "avg_frame_rate": "25/1"
+          }
+        ],
+        "format": {
+          "duration": "0.040000",
+          "size": "48915"
+        }
+      }
+    }
+  ],
+  "frames": [
+    {
+      "path": "frames/selection.png",
+      "state": "selection",
+      "recording_seconds": 0,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "4ab78b8b7a29cb1e86e643fb44c3e2b1289388dd59137d96be6aa0d24fb23bef"
+    },
+    {
+      "path": "frames/hold-start.png",
+      "state": "hold-start",
+      "recording_seconds": 22.8,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "22b52d3c589066eb26f47009702f8b812f92095a1dc596e7d3c3b78d962a38c6"
+    },
+    {
+      "path": "frames/flick-pink.png",
+      "state": "flick-pink",
+      "recording_seconds": 30,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "9e2920f0252a408c2fe84bf1ed8bb46f2a0bf39d7b7fc65215628d58a0eb3f80"
+    },
+    {
+      "path": "frames/tap-blue.png",
+      "state": "tap-blue",
+      "recording_seconds": 40,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "569c4e0ed0f93771483a21bccabdb6b633338a98a84a284ed6cc9ac985969346"
+    },
+    {
+      "path": "frames/curved-hold.png",
+      "state": "curved-hold",
+      "recording_seconds": 60,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "5428209f8cb156782ee9b92db914fe18e6932029d5f5e2a54e2ec3752b1cb51b"
+    },
+    {
+      "path": "frames/critical-gold.png",
+      "state": "critical-gold",
+      "recording_seconds": 100,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "c3294a8cca1873e209b33f40f171f1f0601ba86c09619cb622a94b04d2ef4816"
+    },
+    {
+      "path": "frames/simultaneous-flick.png",
+      "state": "simultaneous-flick",
+      "recording_seconds": 110,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "4784b6e3ce6ab7d99d566b462a814b0c6acd07eac0565a8ec6ee1acbc0267be6"
+    },
+    {
+      "path": "frames/last-notes.png",
+      "state": "last-notes",
+      "recording_seconds": 129.95,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "d7f726885da6955aa8b862734156340819a7b03ccbf79264612bc1c6fbfd7eea"
+    },
+    {
+      "path": "frames/ending-background.png",
+      "state": "ending-background",
+      "recording_seconds": 130.5,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "32b3e72e40fc7f636fa44e99f2a07867d2359412e581bcbc547b072e9141c94c"
+    },
+    {
+      "path": "frames/fc-enter.png",
+      "state": "fc-enter",
+      "recording_seconds": 131.35,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "20302d8b0f3cedebfb99885ab086bd8838516eeae0cf52aa3245e6524513b787"
+    },
+    {
+      "path": "frames/fc-ring.png",
+      "state": "fc-ring",
+      "recording_seconds": 131.5,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "fecfadd475a307369c62fcb47452302f00cab4497bf488026aa3d9e316b51040"
+    },
+    {
+      "path": "frames/fc-burst.png",
+      "state": "fc-burst",
+      "recording_seconds": 131.75,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "5c43f7291fb86fbd9f12ed2f1196c899abcc283d30c6952ffcef6a1bdbf88cd6"
+    },
+    {
+      "path": "frames/fc-flash.png",
+      "state": "fc-flash",
+      "recording_seconds": 132,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "2e6d75e5c3c07e9d89e50d6771aa2238cc1c0d72aa2e155066c421502ab2290d"
+    },
+    {
+      "path": "frames/fc-particles.png",
+      "state": "fc-particles",
+      "recording_seconds": 132.5,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "c2214bbee2cd46b1097a34720ff430f761ea7c7464df11df4773114fdd4db804"
+    },
+    {
+      "path": "frames/fc-settled.png",
+      "state": "fc-settled",
+      "recording_seconds": 133.5,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "dba06f1336371819210743a257db243923492edf7884654e09534c0a1b1e7c5e"
+    },
+    {
+      "path": "frames/fc-fade.png",
+      "state": "fc-fade",
+      "recording_seconds": 135.5,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "b848362e816ab54ee0f8446dcae2dd07ca5c30c654f4744d4c91aecbe03007a2"
+    },
+    {
+      "path": "frames/result.png",
+      "state": "result",
+      "recording_seconds": 153.5,
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "a4f0d6bbeb3c9f9829da19b38ae79df412d7d054e85bd767c96ba40a8d4a77c5"
+    }
+  ]
+}

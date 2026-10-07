@@ -1,0 +1,328 @@
+{
+  "source": "Assets/CustomMusicScoreManager/Runtime/UI/ScreenLayerCustomMusicScoreManager.cs",
+  "constants": {
+    "MaxManifestFieldColumnCount": "3",
+    "ManifestFieldMinWidth": "300",
+    "ManifestFieldSpacingX": "22",
+    "ManifestFieldLeftPadding": "20",
+    "ManifestFieldRightScrollPadding": "44",
+    "ActionButtonWidth": "196",
+    "ActionButtonHeight": "54",
+    "ActionButtonSpacing": "12",
+    "ActionButtonsTop": "256",
+    "ActionButtonsToFormGap": "22",
+    "ManifestFormBottom": "112",
+    "BestResultPreferredWidth": "500",
+    "BestResultMinWidth": "420",
+    "BestResultHeight": "168",
+    "BestResultTop": "28",
+    "BestResultRight": "28",
+    "BestResultGap": "24",
+    "NoteSkinTypeCount": "2",
+    "NoteSeTypeCount": "2",
+    "NoteEffectTypeCount": "2",
+    "AutoSaveIntervalTypeCount": "6",
+    "ScoreMakerPreviewModeTypeCount": "3",
+    "MinVisualAlphaPercent": "10",
+    "MaxVisualAlphaPercent": "100"
+  },
+  "texts": [
+    {
+      "node": "ListTitle",
+      "text": "本地谱面",
+      "size": "26",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "EmptyText",
+      "text": "暂无本地谱面",
+      "size": "24",
+      "style": "Normal",
+      "alignment": "Center"
+    },
+    {
+      "node": "DetailTitle",
+      "text": "请选择谱面",
+      "size": "38",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Title",
+      "text": "最佳成绩",
+      "size": "22",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Title",
+      "text": "设置",
+      "size": "36",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "自动保存间隔",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "制谱器预览方式",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "Note皮肤",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "Note音效",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "击打特效",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "多押提示线",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "MusicInfo显示",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "舞萌音效",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "Auto模式",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "Auto结算动画",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "Live背景",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "判定偏差显示",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "桌面全屏",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "应用程序备份",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "备份内容恢复",
+      "size": "24",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Label",
+      "text": "难度",
+      "size": "23",
+      "style": "Bold",
+      "alignment": "Left"
+    },
+    {
+      "node": "Hint",
+      "text": "切换",
+      "size": "19",
+      "style": "Bold",
+      "alignment": "Center"
+    },
+    {
+      "node": "Label",
+      "text": "导入",
+      "size": "20",
+      "style": "Bold",
+      "alignment": "Center"
+    }
+  ],
+  "colors_rgba": [
+    [
+      0,
+      0,
+      0,
+      176
+    ],
+    [
+      20,
+      24,
+      30,
+      255
+    ],
+    [
+      21,
+      25,
+      31,
+      255
+    ],
+    [
+      22,
+      26,
+      32,
+      255
+    ],
+    [
+      22,
+      27,
+      34,
+      255
+    ],
+    [
+      24,
+      29,
+      36,
+      255
+    ],
+    [
+      26,
+      31,
+      38,
+      255
+    ],
+    [
+      28,
+      34,
+      42,
+      255
+    ],
+    [
+      31,
+      37,
+      45,
+      255
+    ],
+    [
+      39,
+      46,
+      55,
+      255
+    ],
+    [
+      42,
+      49,
+      58,
+      255
+    ],
+    [
+      52,
+      91,
+      112,
+      255
+    ],
+    [
+      54,
+      67,
+      80,
+      255
+    ],
+    [
+      62,
+      78,
+      92,
+      255
+    ],
+    [
+      110,
+      49,
+      57,
+      255
+    ],
+    [
+      120,
+      126,
+      132,
+      120
+    ],
+    [
+      126,
+      221,
+      166,
+      255
+    ],
+    [
+      136,
+      146,
+      158,
+      180
+    ],
+    [
+      180,
+      213,
+      242,
+      255
+    ],
+    [
+      220,
+      238,
+      255,
+      255
+    ],
+    [
+      238,
+      243,
+      247,
+      255
+    ],
+    [
+      255,
+      184,
+      100,
+      255
+    ]
+  ],
+  "reference_font_eb": "Assets/Resources/font/FOT-RodinNTLGPro-EB.otf",
+  "reference_font_db": "Assets/Resources/font/FOT-RodinNTLGPro-DB.otf"
+}

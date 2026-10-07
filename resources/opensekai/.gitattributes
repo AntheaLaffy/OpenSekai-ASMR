@@ -1,0 +1,2 @@
+# Preserve original Git blob identities, including Unity metadata line endings.
+upstream/** -text

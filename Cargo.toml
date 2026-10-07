@@ -1,0 +1,25 @@
+[package]
+name = "opensekai"
+version = "0.1.0"
+edition = "2024"
+publish = false
+description = "Native OpenSekai application for the ASM Unity editor"
+
+[lib]
+path = "native/src/lib.rs"
+crate-type = ["rlib", "cdylib"]
+
+[[bin]]
+name = "opensekai"
+path = "native/src/main.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+zip = { version = "8.6", default-features = false, features = ["deflate"] }
+
+[profile.release]
+lto = "thin"
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"

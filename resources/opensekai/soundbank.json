@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "source_commit": "17a62c4a306fc753ef0f8edfc64867182c936920",
+  "source_prefab": "upstream/Assets/Features/live/view/FrontUIView.prefab",
+  "source_sha256": "55edcfd6c2ec13479682e7dd8c330bf43efefa941d708f8ab5623b6471af78ed",
+  "animation_events": [
+    {
+      "clip": "upstream/Assets/Features/live/result/default/animation/clip_FINISH_v2_01.anim",
+      "sha256": "94a5784c4353263f541aad49baec9d92a82bfe88db3a7e714d5be06fadaf9f94",
+      "time": 0.06666667,
+      "function": "PLaySE",
+      "cue": "se_live_finish"
+    }
+  ],
+  "cues": [
+    {
+      "name": "se_live_tap",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_tap.wav",
+          "guid": "12bae057be42bf541a440c177229d2bf",
+          "sha256": "5911b2bf9dc3fcb933ec716527355e5edbb9c158a7425c264850ac4a7010fdb0"
+        }
+      ]
+    },
+    {
+      "name": "se_live_good",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_good.wav",
+          "guid": "348d01355048596489a282b8a2395c56",
+          "sha256": "31fbf52bbe4d11a1405bc4e310e1348cb239221a3e58a4c32333110e0890b74c"
+        }
+      ]
+    },
+    {
+      "name": "se_live_great",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_great.wav",
+          "guid": "7b6ac8c164f062d46b14f48800cb41a9",
+          "sha256": "6d50c047faa033ff865011406a791d1593e8fa52f8764ce4d54b3f2f1129657c"
+        }
+      ]
+    },
+    {
+      "name": "se_live_perfect",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_perfect.wav",
+          "guid": "c62c581d5f3e0e440acc0b575fa07408",
+          "sha256": "03a0f787f8c4fd7e6b97ef185afd1b61d8e9ffc5e6bbd3e65f02fcbc40a89355"
+        }
+      ]
+    },
+    {
+      "name": "se_live_critical",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_critical.wav",
+          "guid": "8e0efaa881c649f4d83802802b3e25ea",
+          "sha256": "e30c0192eb70916be89c0ea38c9063aff60e130d07bdb6eabe3035321f716c95"
+        }
+      ]
+    },
+    {
+      "name": "se_live_long",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_long.wav",
+          "guid": "fff27727613a6f244bbe587741ff718b",
+          "sha256": "a94cd1d5afb0a8932266846241c43208651cb1bc46bfacfd8f0eb9226d672a88"
+        }
+      ]
+    },
+    {
+      "name": "se_live_long_critical",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_long_critical.wav",
+          "guid": "50fc5f9ff8be92b459fcf32becdf5dce",
+          "sha256": "f4e2fe9cf537de3531ae51a7140bd4fcbaa693925071b22d141103ab68c6ce9f"
+        }
+      ]
+    },
+    {
+      "name": "se_live_connect",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_connect.wav",
+          "guid": "e0175fecc4b276e4b83e176bd67f68e5",
+          "sha256": "ce169fad1e664b4d6925c615f43a612ce2582a595776e689cb55057dba160f9f"
+        }
+      ]
+    },
+    {
+      "name": "se_live_connect_critical",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_connect_critical.wav",
+          "guid": "3b310ff7c48f4c84689396a7ae00e01b",
+          "sha256": "4a829afe89fd42558280cb917bbef4fe19242bfbdbbdd6214f4924be4de55d5b"
+        }
+      ]
+    },
+    {
+      "name": "se_live_flick",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_flick.wav",
+          "guid": "2ac12288a79f1f548a1487178292a541",
+          "sha256": "3ec3e32aee2b60f4350f0e9201be16d31dff99efc635a3027bfd3e7fb9f4167d"
+        }
+      ]
+    },
+    {
+      "name": "se_live_flick_critical",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_flick_critical.wav",
+          "guid": "f430ea9aab296234dbf8f6aba6a97f88",
+          "sha256": "16cc1e5034dea6fb22c0f2d5113d9796079eeaf3312c5571da3b6ae0a3e55494"
+        }
+      ]
+    },
+    {
+      "name": "se_live_trace",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/custom01.acb_0000_cue0.wav",
+          "guid": "a5e1aa15a8252b44bb39a3c3ead754c7",
+          "sha256": "2709cf6158734e2c4bf05942e0b47ba001aa1a7b1ca10127c0d93de898de2f20"
+        }
+      ]
+    },
+    {
+      "name": "se_live_trace_critical",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_trace_critical.wav",
+          "guid": "b5040dade9c374146add45179029ab78",
+          "sha256": "c93815382d2edf832d026d01ce33f9c8d61705a415c8eb1df8f39d779d246d08"
+        },
+        {
+          "path": "upstream/Assets/Features/live/tap_se/custom01/se_live_trace.wav",
+          "guid": "1f23de91b52e5dd469bc232006af1328",
+          "sha256": "3aacd3b928396e2874e02962afd926d813d04f0da2db372487c4b55e98a8bc5a"
+        }
+      ]
+    },
+    {
+      "name": "se_live_clear",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/live_se/default/se_live_clear.wav",
+          "guid": "db39cd1a29a09984da704279463a21df",
+          "sha256": "9ba36791b4d53bd29a580cdcdce6e350da2adc11c465eb2782c40a16c5bf05d5"
+        }
+      ]
+    },
+    {
+      "name": "se_live_full_combo",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/live_se/default/se_live_full_combo.wav",
+          "guid": "069bb24c8a4cc264782090029f71010f",
+          "sha256": "595b3010dd3f5e60a83d7c8ae9dd0fb52ba1a790a03d8356f72526c7e614e7bb"
+        }
+      ]
+    },
+    {
+      "name": "se_live_all_perfect",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/live_se/default/se_live_all_perfect.wav",
+          "guid": "db53eb42c5c0f11409f55027475ba952",
+          "sha256": "f59ab43bd7e4abac8f45ca38b679bd7a75b9a8c60e6cc6449343ac9a5b59b7dc"
+        }
+      ]
+    },
+    {
+      "name": "se_live_finish",
+      "gain": 1.0,
+      "clips": [
+        {
+          "path": "upstream/Assets/Features/live/live_se/default/se_live_finish.wav",
+          "guid": "1f3bab5d844e5bb48a5ec02f1d704443",
+          "sha256": "12e77bb55adc0fa6e327f39495ec51a6cb5756d132673076a8335ebd4f0b13be"
+        }
+      ]
+    }
+  ]
+}

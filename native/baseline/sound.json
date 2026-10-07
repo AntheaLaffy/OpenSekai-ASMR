@@ -1,0 +1,790 @@
+{
+  "source": "Assets/Scripts/Assembly-CSharp/Sekai/TapEffectView.cs",
+  "cases": [
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_perfect",
+      "group": "perfect"
+    },
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_perfect",
+      "group": "perfect"
+    },
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_great",
+      "group": "perfect"
+    },
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_good",
+      "group": "good"
+    },
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "Bad",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 0,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_perfect",
+      "group": "perfect"
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_critical",
+      "group": "se_live_critical"
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_critical",
+      "group": "se_live_critical"
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_critical",
+      "group": "se_live_critical"
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_critical",
+      "group": "se_live_critical"
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_critical",
+      "group": "se_live_critical"
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 0,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_critical",
+      "group": "se_live_critical"
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "Bad",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 1,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 1,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_perfect",
+      "group": "se_live_perfect"
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_connect",
+      "group": "se_live_connect"
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_connect",
+      "group": "se_live_connect"
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_connect",
+      "group": "se_live_connect"
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_connect",
+      "group": "se_live_connect"
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "Bad",
+      "cue": "se_live_connect",
+      "group": "se_live_connect"
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 2,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_connect",
+      "group": "se_live_connect"
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_connect_critical",
+      "group": "se_live_connect_critical"
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_connect_critical",
+      "group": "se_live_connect_critical"
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_connect_critical",
+      "group": "se_live_connect_critical"
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_connect_critical",
+      "group": "se_live_connect_critical"
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_connect_critical",
+      "group": "se_live_connect_critical"
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 2,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_connect_critical",
+      "group": "se_live_connect_critical"
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "Bad",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 3,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 3,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "Bad",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 4,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 4,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "Bad",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 6,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_trace",
+      "group": "se_live_trace"
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 6,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_trace_critical",
+      "group": "se_live_trace_critical"
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "Great",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "Good",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "Bad",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 8,
+      "critical": false,
+      "judge": "Auto",
+      "cue": "se_live_flick",
+      "group": "se_live_flick"
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "Great",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "Good",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "Bad",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 8,
+      "critical": true,
+      "judge": "Auto",
+      "cue": "se_live_flick_critical",
+      "group": "se_live_flick_critical"
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "JustPerfect",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "Perfect",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "Great",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "Good",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "Bad",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": false,
+      "judge": "Auto",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "JustPerfect",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "Perfect",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "Great",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "Good",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "Bad",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "Miss",
+      "cue": null,
+      "group": null
+    },
+    {
+      "category": 12,
+      "critical": true,
+      "judge": "Auto",
+      "cue": null,
+      "group": null
+    }
+  ],
+  "scope": "Original SetupSEDict/GetTapSeKey/PlaySe; PlaySE records its arguments, no Unity/audio simulation."
+}
