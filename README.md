@@ -50,6 +50,8 @@ make opensekai-editor
 
 `cargo` 命令可以在本仓库根目录执行；`make opensekai-*`、真实窗口检查和 ASM 宿主命令必须在 `unity_ui` 根目录执行。若 `unity_ui` 检出版本已经自带 `application/OpenSekai-ASMR` 链接，只需确认链接目标指向本仓库即可。
 
+Rust 依赖由本仓库的 `Cargo.toml` 和 `Cargo.lock` 管理，可用 `cargo check`、`cargo test`、`cargo fmt` 和 `cargo clippy` 检查。`unity_ui` 是外部的 C/ASM/Vulkan 宿主，不是 Cargo crate；它需要通过上面的应用链接接入，不能由 Cargo 自动下载或替代。
+
 ## 目录
 
 - `Assets/`、`Packages/`、`ProjectSettings/`：原 Unity 工程和迁移参照资源。
