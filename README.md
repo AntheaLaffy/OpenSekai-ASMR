@@ -29,30 +29,26 @@ cargo run --release -- audit-library /path/to/library
 
 ## 与 `unity_ui` 的关系
 
-本仓库是 [AntheaLaffy/unity_ui](https://github.com/AntheaLaffy/unity_ui) 的 OpenSekai 应用项目。`unity_ui` 提供 ASMUI 编辑器、SDL/Vulkan 宿主和顶层 `Makefile`；本仓库提供 Unity 工程、Rust 运行时、OpenSekai 资源和谱面数据。两者必须并列放置，父仓库的 `application/OpenSekai-ASMR` 是指向本仓库的符号链接。
+OpenSekai-ASMR 依赖 [AntheaLaffy/unity_ui](https://github.com/AntheaLaffy/unity_ui) 提供 ASMUI 编辑器、SDL/Vulkan 宿主和顶层 `Makefile`；本仓库提供 Unity 工程、Rust 运行时、OpenSekai 资源和谱面数据。只克隆本仓库可以使用 Rust CLI，但完整的 ASMUI 窗口和回归检查必须接入 `unity_ui`。两个仓库可以放在任意位置，不要求并列。
 
-目录应类似这样：
+推荐的链接关系如下，链接目标也可以换成你的实际路径：
 
 ```text
-asm/
-├── unity_ui/
-│   ├── application/OpenSekai-ASMR -> ../../OpenSekai-ASMR
-│   └── Makefile
-└── OpenSekai-ASMR/
+/path/to/unity_ui/application/OpenSekai-ASMR -> /path/to/OpenSekai-ASMR
 ```
 
-从全新目录开始时，先克隆两个并列仓库：
+从全新目录开始时，可以把两个仓库克隆到任意位置，再建立应用链接：
 
 ```sh
-mkdir asm
-cd asm
-git clone https://github.com/AntheaLaffy/unity_ui.git
-git clone https://github.com/AntheaLaffy/OpenSekai-ASMR.git
-cd unity_ui
+git clone https://github.com/AntheaLaffy/unity_ui.git /path/to/unity_ui
+git clone https://github.com/AntheaLaffy/OpenSekai-ASMR.git /path/to/OpenSekai-ASMR
+mkdir -p /path/to/unity_ui/application
+ln -s /path/to/OpenSekai-ASMR /path/to/unity_ui/application/OpenSekai-ASMR
+cd /path/to/unity_ui
 make opensekai-editor
 ```
 
-`cargo` 命令可以在本仓库根目录执行；`make opensekai-*`、真实窗口检查和 ASM 宿主命令必须在 `unity_ui` 根目录执行。不要把本仓库再克隆成 `unity_ui/application/OpenSekai-ASMR` 下的实体目录，否则会破坏父仓库预期的符号链接布局。
+`cargo` 命令可以在本仓库根目录执行；`make opensekai-*`、真实窗口检查和 ASM 宿主命令必须在 `unity_ui` 根目录执行。若 `unity_ui` 检出版本已经自带 `application/OpenSekai-ASMR` 链接，只需确认链接目标指向本仓库即可。
 
 ## 目录
 
