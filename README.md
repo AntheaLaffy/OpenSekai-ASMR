@@ -5,6 +5,8 @@ OpenSekai-ASMR 是基于 [cubeww/OpenSekai](https://github.com/cubeww/OpenSekai)
 > [!WARNING]
 > Rust 运行时仍在迁移中，尚未覆盖全部应用入口，也没有证明与 Unity 画面逐像素一致。完整的已接通功能和未完成项目以 [native/README.md](native/README.md) 为准。
 
+项目演示视频：[哔哩哔哩](https://www.bilibili.com/video/BV1xVah62E1c/)
+
 ## 当前内容
 
 - Unity 工程仍提供原有的谱面编辑、第三方歌曲包和 Live 测试流程。
