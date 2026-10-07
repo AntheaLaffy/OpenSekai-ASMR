@@ -1,6 +1,6 @@
 # OpenSekai-ASMR
 
-OpenSekai-ASMR 是 ASM Unity 编辑器与原生 Rust 运行时的迁移项目。Unity 源码、资源和项目设置保留为行为与视觉参照；Rust 运行时负责逐步接管谱面管理、编辑、演奏和结算流程。迁移的基准、运行方式和验收范围见 [native/README.md](native/README.md)。
+OpenSekai-ASMR 是基于 [cubeww/OpenSekai](https://github.com/cubeww/OpenSekai) 的 ASM Unity 编辑器与原生 Rust 运行时迁移项目。Unity 源码、资源和项目设置保留为行为与视觉参照；Rust 运行时负责逐步接管谱面管理、编辑、演奏和结算流程。迁移的基准、运行方式和验收范围见 [native/README.md](native/README.md)。
 
 > [!WARNING]
 > Rust 运行时仍在迁移中，尚未覆盖全部应用入口，也没有证明与 Unity 画面逐像素一致。完整的已接通功能和未完成项目以 [native/README.md](native/README.md) 为准。
@@ -13,7 +13,7 @@ OpenSekai-ASMR 是 ASM Unity 编辑器与原生 Rust 运行时的迁移项目。
 
 ## 快速开始
 
-Unity 工程使用 Unity `2022.3.62f3`，渲染管线为 URP 14。用 Unity Hub 打开本目录即可继续使用原编辑器；原 Unity 应用的显示名称仍保留为 `Ojsk Community`。
+Unity 工程使用 Unity `2022.3.62f3`，渲染管线为 URP 14。用 Unity Hub 打开本目录即可继续使用原编辑器。
 
 构建并运行 Rust 命令行工具：
 
@@ -41,17 +41,3 @@ cargo run --release -- audit-library /path/to/library
 本仓库中的代码以 MIT 协议发布。第三方库、字体、音频、贴图、Prefab、Shader，以及来自原作或其他权利方的资源不自动包含在 MIT 授权范围内；请遵循各自的原始许可和权利归属。资源来源和固定版本见 [resources/opensekai/README.md](resources/opensekai/README.md)。
 
 本项目与 Project Sekai、其发行方或其他权利方没有官方关联。
-
-<img src="https://www.jsoftstudio.top/css/Jsoft_logo.png" width="100" height="100" alt="Jsoft_logo" align="center" />
-
-###### ©2024-2026 Jsoft Studio
-
-<img src="https://img.shields.io/github/stars/AntheaLaffy/OpenSekai-ASMR.svg">
-
-<img src="https://img.shields.io/badge/交流QQ群-984242265-purple">
-
-<img src="https://img.shields.io/badge/OpenSekai官方群-787994708-purple">
-
-<img src="https://img.shields.io/badge/B站-J软件官方-light">
-
-<img src="https://img.shields.io/badge/官网-www.jsoftstudio.top-yellow">
